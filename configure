@@ -1,0 +1,48 @@
+-edition phone
+-ui-type mobile
+-xplatform ezx 
+-arch arm 
+-displaysizes ui:240,ui:320
+-prefix /opt/Qtopia
+-launch-method quicklaunch
+-add-font DejaVuSans.ttf
+-add-module media
+-add-mediaengine cruxus
+-add-module ipcomms
+-add-module pkgmanagement
+-add-module ui
+-add-module cell
+-add-module pim
+-add-module messaging
+-add-module telephony
+-add-module inputmethods
+-remove-module drm
+-remove-module sxe
+-remove-module qtuitest
+-remove-module infrared
+-pictureflow
+-dbus
+-add-module bluetooth
+-sound-system alsa
+-extra-qt-embedded-config "-depths 16,18"
+-extra-qt-embedded-config "-plugin-gfx-transformed" 
+-extra-qt-embedded-config "-qt-mouse-tslib" 
+-extra-qt-embedded-config "-no-mouse-pc" 
+-extra-qt-embedded-config "-no-mouse-linuxtp" 
+-extra-qt-embedded-config "-D QT_QWS_SCREENCORDS" 
+-extra-qt-embedded-config "-D QT_QWS_DISABLE_FLUSHCLIPPING" 
+-extra-qt-embedded-config "-no-qt3support "
+-extra-qt-embedded-config "-plugin-sql-sqlite" 
+-extra-qt-embedded-config "-system-zlib"
+-extra-qt-embedded-config "-system-libpng"
+-extra-qt-embedded-config "-system-libjpeg"
+-extra-qt-embedded-config "-qt-gif"
+-extra-qt-config -no-glib 
+-D SYSINFO_GEEK_MODE
+-release
+#-build-qt
+-lrt
+-sdk /usr/local/angstrom/arm/qtopia
+-system-sqlite
+
+
